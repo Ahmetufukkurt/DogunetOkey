@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+}
+.contanier {
+  position: relative;
+}
+.game-area {
+  position: relative;
+}
+.coin {
+  border: 5px solid white;
+  border-radius: 15px;
+  background-color: black;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  float: left;
+  padding-right: 10px;
+}
+.coin img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: -10px;
+}
+.coin span {
+  display: inline-block;
+  margin-left: auto;
+}
+.chest {
+  border: 5px solid white;
+  border-radius: 15px;
+  background-color: black;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  position: relative;
+  top: 5px;
+  float: left;
+  margin-left: 25px;
+  padding-right: 10px;
+}
+.chest img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: -20px;
+}
+.chest span {
+  display: inline-block;
+  margin-left: auto;
+}
+.message,
+.dropdown,
+.settings {
+  float: right;
+  background-color: black;
+  border: 5px solid white;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 5px;
+  height: 50px;
+}
+.message,
+.dropdown {
+  border-radius: 20px;
+}
+.settings {
+  border-radius: 50%;
+}
+.dropdown {
+  padding: 10px;
+}
+.message img {
+  width: 30px;
+}
+.dropdown img {
+  width: 30px;
+}
+.settings img {
+  width: 30px;
+}
+.user-top {
+  position: absolute;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #001a23;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.coffee {
+  position: absolute;
+  width: 100px;
+  right: -50px;
+  bottom: -40px;
+}
+.user-top img {
+  width: 100px;
+  margin: 5px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.money {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  width: 30px;
+}
+.name {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.user span {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #446629;
+}
+
+/* left user */
+.user-left {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #001a23;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.user-left img {
+  width: 120px;
+  margin: 5px;
+}
+.user-left .user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.money {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.user img {
+  width: 30px;
+}
+.name {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.user span {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #446629;
+}
+
+/* right user*/
+
+.user-right {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #001a23;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+.user-right img {
+  width: 120px;
+  margin: 5px;
+}
+.user-right .user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.money {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.user img {
+  width: 30px;
+}
+.name {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.user span {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #446629;
+}
+.area {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.area img {
+  width: 55%;
+}
+.game-information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.right-side {
+  width: 10% !important;
+}
+.star {
+  width: 30px;
+  margin: 10px auto;
+}
+.game-type1 {
+  background: #10303b;
+  border-radius: 15px;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #ffffff;
+  margin: 5px;
+  text-align: center;
+}
+.game-type2 {
+  background: #0f694a;
+  border-radius: 15px;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  line-height: 38px;
+  color: #ffffff;
+  margin: 5px;
+}
+.game-type3 {
+  background: #7c1a33;
+  border-radius: 15px;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  margin: 5px;
+}
+.tas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 60%;
+  margin: auto;
+}
+.round {
+  background: #10303b;
+  border-radius: 15px;
+  font-family: "Viga";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.isteka-area {
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+  width: 850px;
+}
+
+.left {
+  position: absolute;
+  bottom: 0px;
+  left: 35px;
+}
+.cift-icon {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+.left img {
+  width: 55%;
+}
+.right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.seri-icon {
+  position: absolute;
+  top: 20px;
+}
+.right img {
+  width: 55%;
+}
+.sortable-list {
+  width: 110%;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("../image/game-board.png");
+  background-size: cover;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.sortable-list .item {
+  list-style: none;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 75px;
+}
+.tas:hover {
+  cursor: pointer;
+}
+.item .details {
+  display: flex;
+  align-items: center;
+}
+
+.item.dragging {
+  opacity: 0.6;
+}
+.item.dragging :where(.details, i) {
+  opacity: 0;
+}
+.details .tas {
+  width: 50px;
+  height: 70px;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 12px;
+  position: relative;
+}
+.gameboard-star {
+  position: absolute;
+  bottom: -5px;
+}
+.details .tas span {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 1700px) {
+  .area img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .user-top img {
+    width: 50px;
+  }
+  .area {
+    top: 15%;
+    left: 17%;
+  }
+  .area img {
+    width: 50%;
+  }
+  .user-left img {
+    width: 50px;
+  }
+  .user-right img {
+    width: 50px;
+  }
+  .name {
+    font-size: 24px;
+    text-align: center;
+  }
+  .money img {
+    width: 20px;
+  }
+  .coffee {
+    bottom: -30px;
+    right: -35px;
+  }
+  .game-type1,
+  .game-type2.game-type3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .game-information {
+    gap: 0px;
+  }
+  .tas {
+    font-size: 24px;
+    width: 45%;
+    line-height: 35px;
+  }
+  .star {
+    width: 20px !important;
+  }
+  .round {
+    font-size: 24px;
+  }
+}
