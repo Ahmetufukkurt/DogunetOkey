@@ -571,6 +571,16 @@ body {
   .col-inner {
     border-radius: 8px;
   }
+  .left {
+    position: absolute;
+    left: 300px;
+    bottom: 20px;
+  }
+  .right {
+    position: absolute;
+    right: 380px;
+    bottom: 20px;
+  }
 }
 @media screen and (max-width: 1360px) {
   .user-top img {
