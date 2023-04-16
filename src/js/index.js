@@ -34,8 +34,10 @@ sortableList.addEventListener("dragenter", (e) => e.preventDefault());
 const seribtn = document.querySelector(".seri");
 
 const ciftbtn = document.querySelector(".cift");
+const rightarea = document.querySelector(".right-side");
 const tas = document.querySelectorAll(".isteka-area .tas");
 const area = document.querySelector(".area");
+const star = document.querySelectorAll("istek-area .tas img");
 
 seribtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
@@ -45,25 +47,32 @@ seribtn.addEventListener("click", () => {
     currentLeft += 50;
     tas[i].style.left = currentLeft + "px";
     if ((i + 1) % 3 === 0) {
-      currentTop += 70;
+      currentTop += 60;
       currentLeft = 10;
     }
     tas[i].style.top = currentTop + "px";
+    tas[i].classList.replace("opennig-tas", "active");
+
     area.appendChild(tas[i]);
   }
 });
+
 ciftbtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
-  let currentLeft = 620;
+  let currentLeft = 10;
   let currentTop = 5;
   for (let i = 0; i < tas.length; i++) {
-    currentLeft += 50;
+    currentLeft += 0;
     tas[i].style.left = currentLeft + "px";
     if ((i + 1) % 2 === 0) {
       currentTop += 70;
-      currentLeft = 620;
+      currentLeft = 10;
+    } else {
+      currentLeft = 60;
     }
     tas[i].style.top = currentTop + "px";
-    area.appendChild(tas[i]);
+    tas[i].classList.replace("opennig-tas", "active");
+
+    rightarea.appendChild(tas[i]);
   }
 });

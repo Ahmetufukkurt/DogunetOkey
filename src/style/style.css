@@ -255,10 +255,12 @@ body {
   gap: 5px;
 }
 .right-side {
-  width: 10% !important;
+  width: 33% !important;
+  height: 100%;
+  position: relative;
 }
 .star {
-  width: 30px;
+  width: 15px;
   margin: 10px auto;
 }
 .game-type1 {
@@ -560,7 +562,27 @@ body {
   margin: auto;
   position: absolute;
   top: 5px;
-  left: 10px;
+  left: 5px;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 45px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 40px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 @media screen and (min-width: 1700px) {
   .container-user {
@@ -606,7 +628,7 @@ body {
   }
   .area {
     top: 15%;
-    left: 17%;
+    left: 20%;
     gap: 20px;
   }
   .area img {
@@ -642,9 +664,7 @@ body {
     width: 45%;
     line-height: 35px;
   }
-  .star {
-    width: 20px !important;
-  }
+
   .round {
     font-size: 24px;
   }
