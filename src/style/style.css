@@ -422,18 +422,7 @@ body {
 .col {
   display: flex;
   flex-direction: column;
-}
-.box-line {
-  width: 2px;
-  background-color: #fff;
-}
-
-.col2 button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 70px;
+  height: 40px;
   background-color: #c1862d;
   color: #fff;
   border-radius: 20px;
@@ -461,6 +450,16 @@ body {
   width: 120px;
   height: 70px;
   background-color: #90c030;
+  color: #fff;
+  border-radius: 20px;
+}
+.col2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 70px;
+  background-color: #b4742c;
   color: #fff;
   border-radius: 20px;
 }
