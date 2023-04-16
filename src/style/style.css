@@ -405,11 +405,147 @@ body {
 .details .tas span {
   font-size: 32px;
 }
+.game-panel {
+  position: absolute;
+
+  bottom: 200px;
+  left: 15%;
+}
+.container-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.box-line {
+  width: 2px;
+  background-color: #fff;
+}
+
+.col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  background-color: #c1862d;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.col-inner {
+  display: flex;
+  flex-direction: wrap;
+  border: 2px solid white;
+}
+.col-inner-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120;
+  height: 20px;
+  background-color: #b4742c;
+  color: #fff;
+  border-radius: 10px;
+}
+.col3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  background-color: #90c030;
+  color: #fff;
+  border-radius: 20px;
+}
+.col4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 60px;
+  background-color: #d18931;
+  border-radius: 20px;
+  gap: 10px;
+}
+.col4 img {
+  width: 50px;
+}
+.User-name {
+  color: #fff;
+}
+.col4-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.col4-inner2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.col4-exp {
+  color: #fff;
+}
+
+.col5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  background-color: #18819a;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.box1-info {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.box2-info {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3-info {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: black;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+}
 
 @media screen and (min-width: 1700px) {
-  .area img {
-    width: 70%;
-  }
 }
 @media screen and (max-width: 1360px) {
   .user-top img {

@@ -5,6 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container-user {   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 60%;
+        height: 60%;
+        background-color: #F5F5F5;;
+        margin: 0 auto;
+      }
+      .col{
+        display: flex;
+        flex-direction: column;
+
+      }
+      .box-line{
+        width: 2px;
+        background-color: #fff;
+      }
+
+      .col2{
+        display:flex ;       
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 60px;          
+        background-color: #C1862D;
+        color: #fff;
+        border-radius: 20px;
+      }
+
+      .col-inner {       
+        display: flex;
+        flex-direction: wrap;
+        border: 2px solid white;
+      }
+      .col-inner-2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 120;
+       height: 20px;
+       background-color: #B4742C;
+       color: #fff;
+       border-radius: 10px;
+         
+      }
+      .col3{
+        display:flex ;       
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 60px;          
+        background-color: #90C030;
+        color: #fff;
+        border-radius: 20px;
+      }
+      .col4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 60px;
+        background-color: #D18931;
+        border-radius: 20px;
+        gap: 10px;
+      }
+      .col4 img{
+        width: 50px
+        
+      }
+      .User-name{
+    
+        color: #fff;
+      }
+      .col4-inner{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       align-items: center;
+       justify-content: center;
+
+      }
+      .col4-inner2{
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       align-items: center;
+       justify-content: center;
+
+      }
+      .col4-exp{
+        color: #fff;  
+      }
+        
+        
+      
+      .col5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 60px;
+        background-color:#18819A ;
+        color: #fff;
+        border-radius: 20px;
+      }
+
+     
+      .box1-info { 
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        border-radius: 5px 0 0 5px;
+
+      }
+
+      .box2-info {
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      .box3-info {
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        background-color: black;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 5px 5px 0;
+      
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container-user">
+     <div class="col">
+      <div class="col-inner">
+        <div class="box1-info">6</div>
+        <div class="box-line"></div>
+        <div class="box2-info">0</div>
+        <div class="box-line"></div>
+        <div class="box3-info">8</div> 
+        <div class="box-line"></div> 
+    </div>
+    <div class="col-inner-2"> Hesapla</div>
+  </div>
+      <div class="col2">ÇİFT AÇ</div>
+      <div class="col3 ">SERİ AÇ</div>
+      <div class="col4">
+        <img  src="./src/image/admin-image.png" alt="" >
+        <div class="col4-inner">
+          <div class="User-name">Mehmet B.</div>
+          <div class="user-puan"><img src="./src/image/chip-icon.png" alt="" style="height: 12px; width: 12px;"> 561.672</div>
+        </div>
+      
+        <div class="col4-inner2">
+          <div class="col4-exp-inner">XP</div>
+          <div class="col4-exp">964.348</div>
+        </div>
+      </div>
+        <div class="col5">İşle</div>
+      </div>
+      
+    </div>
+  </body>
 </html>
