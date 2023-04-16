@@ -407,7 +407,6 @@ body {
 }
 .game-panel {
   position: absolute;
-
   bottom: 200px;
   left: 15%;
 }
@@ -429,7 +428,7 @@ body {
   background-color: #fff;
 }
 
-.col2 {
+.col2 button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +454,7 @@ body {
   color: #fff;
   border-radius: 10px;
 }
-.col3 {
+.col3 button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,19 +543,39 @@ body {
   align-items: center;
   border-radius: 0 5px 5px 0;
 }
-
+.opennig-tas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 45px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 50px;
+  height: 70px;
+  margin: auto;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
 @media screen and (min-width: 1700px) {
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1366px) {
   .user-top img {
     width: 50px;
   }
   .area {
     top: 15%;
     left: 17%;
+    gap: 20px;
   }
   .area img {
-    width: 50%;
+    width: 45%;
   }
   .user-left img {
     width: 50px;
@@ -593,5 +612,46 @@ body {
   }
   .round {
     font-size: 24px;
+  }
+  .isteka-area {
+    width: 850px;
+  }
+
+  .game-panel {
+    bottom: 180px;
+    left: 18%;
+  }
+  .container-user {
+    gap: 30px;
+    height: 30px;
+  }
+  .col {
+    width: 15%;
+    font-size: 14px;
+  }
+  .col2 button {
+    width: 130%;
+    height: 30px;
+    font-size: 14px;
+  }
+  .col3 button {
+    width: 130%;
+    height: 30px;
+    font-size: 14px;
+  }
+  .col4 {
+    width: 40%;
+    height: 50px;
+  }
+  .col5 {
+    width: 15%;
+    height: 40px;
+    font-size: 18px;
+  }
+  .box1-info,
+  .box2-info,
+  .box3-info {
+    font-size: 16px;
+    height: 30px;
   }
 }
