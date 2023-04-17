@@ -816,13 +816,13 @@ body {
   }
   .left {
     position: absolute;
-    left: 50px;
+    left: 30px;
     bottom: 20px;
     width: 7%;
   }
   .right {
     position: absolute;
-    right: 40px;
+    right: 30px;
     bottom: 20px;
     width: 7%;
   }
@@ -830,7 +830,7 @@ body {
     margin-top: 60px;
   }
   .gelen {
-    margin-bottom: 90px;
+    margin-bottom: 120px;
   }
   .right-giden {
     margin-top: 60px;
