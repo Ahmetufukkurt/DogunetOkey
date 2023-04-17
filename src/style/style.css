@@ -424,8 +424,8 @@ body {
 .col {
   display: flex;
   flex-direction: column;
-  height: 40px;
-  background-color: #c1862d;
+  height: 100%;
+  background-color: white;
   color: #fff;
   border-radius: 20px;
 }
@@ -433,7 +433,12 @@ body {
 .col-inner {
   display: flex;
   flex-direction: wrap;
-  border: 2px solid white;
+  border: 3px solid white;
+}
+.box-line {
+  color: white;
+  height: 100%;
+  width: 5px;
 }
 .col-inner-2 {
   display: flex;
