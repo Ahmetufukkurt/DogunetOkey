@@ -142,7 +142,7 @@ ciftbtn.addEventListener("click", () => {
       rightarea.appendChild(tas[i]);
     }
   } else {
-    let currentLeft = 10;
+    let currentLeft = 7;
     let currentTop = 5;
     const itemsPerRow = 2;
 
@@ -153,7 +153,7 @@ ciftbtn.addEventListener("click", () => {
       currentLeft += 35; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 10;
+        currentLeft = 7;
         currentTop += 45; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
