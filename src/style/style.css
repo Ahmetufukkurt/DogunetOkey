@@ -735,6 +735,14 @@ body {
     gap: 25px;
     margin-left: 70px;
   }
+  .sortable-list .item {
+    width: 70px;
+    height: 100px;
+  }
+  .details .tas {
+    width: 60px;
+    height: 90px;
+  }
   .active {
     display: flex;
     flex-direction: column;
@@ -759,7 +767,7 @@ body {
     width: 1150px;
   }
   .sortable-list {
-    height: 180px;
+    height: 190px;
   }
   .active-2 {
     display: flex;
