@@ -425,11 +425,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #c1862d;
+  background-color: white;
   color: #fff;
   border-radius: 20px;
 }
-
 
 .col-inner {
   display: flex;
@@ -605,6 +604,11 @@ body {
 }
 .star {
   width: 12px !important;
+}
+.box-line {
+  height: 100%;
+  width: 5px;
+  color: white;
 }
 @media screen and (min-width: 1700px) {
   .container-user {
