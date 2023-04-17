@@ -42,18 +42,73 @@ const star = document.querySelectorAll("istek-area .tas img");
 seribtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
   let currentLeft = 10;
-  let currentTop = 5;
-  for (let i = 0; i < tas.length; i++) {
-    currentLeft += 50;
-    tas[i].style.left = currentLeft + "px";
-    if ((i + 1) % 3 === 0) {
-      currentTop += 60;
-      currentLeft = 10;
-    }
-    tas[i].style.top = currentTop + "px";
-    tas[i].classList.replace("opennig-tas", "active");
+  let currentTop = 10;
+  const itemsPerRow = 3;
+  const itemsPerReset = 6;
+  let itemsCounter = 0;
+  if (window.matchMedia("(min-width: 1700px)").matches) {
+    for (let i = 0; i < tas.length; i++) {
+      tas[i].style.left = currentLeft + "px";
+      tas[i].style.top = currentTop + "px";
 
-    area.appendChild(tas[i]);
+      currentLeft += 60; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+
+      if ((i + 1) % itemsPerRow === 0) {
+        // yeni bir satır başlat
+        currentLeft = 210;
+        currentTop += 80; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+
+      // öğelerin stil sınıflarını güncelle
+      if (tas[i].className == "opennig-tas") {
+        tas[i].classList.replace("opennig-tas", "active");
+      } else {
+        tas[i].classList.replace("active-2", "active");
+      }
+
+      area.appendChild(tas[i]);
+
+      itemsCounter++;
+      if (itemsCounter === itemsPerReset) {
+        itemsCounter = 0;
+        currentLeft = 10;
+        let currentTop = 10;
+        currentTop += tas[i].offsetHeight + 12; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+    }
+  } else {
+    let currentLeft = 10;
+    let currentTop = 10;
+
+    for (let i = 0; i < tas.length; i++) {
+      tas[i].style.left = currentLeft + "px";
+      tas[i].style.top = currentTop + "px";
+
+      currentLeft += 43; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+
+      if ((i + 1) % itemsPerRow === 0) {
+        // yeni bir satır başlat
+        currentLeft = 100;
+        currentTop += 60; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+
+      // öğelerin stil sınıflarını güncelle
+      if (tas[i].className == "opennig-tas") {
+        tas[i].classList.replace("opennig-tas", "active");
+      } else {
+        tas[i].classList.replace("active-2", "active");
+      }
+
+      area.appendChild(tas[i]);
+
+      itemsCounter++;
+      if (itemsCounter === itemsPerReset) {
+        itemsCounter = 0;
+        currentLeft = 10;
+        let currentTop = 10;
+        currentTop += tas[i].offsetHeight + 12; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+    }
   }
 });
 
@@ -61,22 +116,55 @@ ciftbtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
   let currentLeft = 10;
   let currentTop = 5;
-  for (let i = 0; i < tas.length; i++) {
-    currentLeft += 0;
-    tas[i].style.left = currentLeft + "px";
-    rightarea.appendChild(tas[i]);
-    if (tas[i] == 1) {
-      currentLeft = 10;
-    } else if ((i + 1) % 2 === 0) {
-      currentTop += 60;
-      currentLeft = 10;
-      console.log(tas[i]);
-    } else {
-      currentLeft = 60;
-    }
-    tas[i].style.top = currentTop + "px";
-    tas[i].classList.replace("opennig-tas", "active");
+  if (window.matchMedia("(min-width: 1700px)").matches) {
+    let currentLeft = 10;
+    let currentTop = 10;
+    const itemsPerRow = 2;
 
-    rightarea.appendChild(tas[i]);
+    for (let i = 0; i < tas.length; i++) {
+      tas[i].style.left = currentLeft + "px";
+      tas[i].style.top = currentTop + "px";
+
+      currentLeft += 55; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      if ((i + 1) % itemsPerRow === 0) {
+        // yeni bir satır başlat
+        currentLeft = 10;
+        currentTop += 75; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+
+      // öğelerin stil sınıflarını güncelle
+      if (tas[i].className == "opennig-tas") {
+        tas[i].classList.replace("opennig-tas", "active-2");
+      } else {
+        tas[i].classList.replace("active", "active-2");
+      }
+
+      rightarea.appendChild(tas[i]);
+    }
+  } else {
+    let currentLeft = 10;
+    let currentTop = 5;
+    const itemsPerRow = 2;
+
+    for (let i = 0; i < tas.length; i++) {
+      tas[i].style.left = currentLeft + "px";
+      tas[i].style.top = currentTop + "px";
+
+      currentLeft += 35; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      if ((i + 1) % itemsPerRow === 0) {
+        // yeni bir satır başlat
+        currentLeft = 10;
+        currentTop += 45; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+      }
+
+      // öğelerin stil sınıflarını güncelle
+      if (tas[i].className == "opennig-tas") {
+        tas[i].classList.replace("opennig-tas", "active-2");
+      } else {
+        tas[i].classList.replace("active", "active-2");
+      }
+
+      rightarea.appendChild(tas[i]);
+    }
   }
 });

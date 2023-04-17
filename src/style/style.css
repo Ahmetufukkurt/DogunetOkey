@@ -255,7 +255,7 @@ body {
   gap: 5px;
 }
 .right-side {
-  width: 33% !important;
+  width: 34% !important;
   height: 100%;
   position: relative;
 }
@@ -571,8 +571,8 @@ body {
   font-family: "Verdana";
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
-  line-height: 45px;
+  font-size: 18px;
+  padding-top: 10px;
   color: #219ebc;
   background: #f3f4f9;
   border: 2px solid #000000;
@@ -584,10 +584,74 @@ body {
   top: 5px;
   left: 5px;
 }
+.active-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: 27px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.star {
+  width: 12px !important;
+}
 @media screen and (min-width: 1700px) {
   .container-user {
     gap: 25px;
     margin-left: 70px;
+  }
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+    color: #219ebc;
+    background: #f3f4f9;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    width: 55px;
+    height: 75px;
+    margin: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .active-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    padding-top: 10px;
+    color: #219ebc;
+    background: #f3f4f9;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 45px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  .star {
+    width: 20px !important;
   }
   .col5 {
     margin-left: 50px;
