@@ -610,6 +610,126 @@ body {
   width: 5px;
   color: white;
 }
+.giden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  padding-top: 20px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  bottom: 150px;
+  right: 30px;
+}
+.giden img {
+  width: 25px !important;
+}
+.gelen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  padding-top: 20px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+.gelen img {
+  width: 25px !important;
+}
+.gelen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  padding-top: 20px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+.gelen img {
+  width: 25px !important;
+}
+.right-giden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  padding-top: 20px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+.right-giden img {
+  width: 25px !important;
+}
+.left-giden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  padding-top: 20px;
+  color: #219ebc;
+  background: #f3f4f9;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  width: 70px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+.left-giden img {
+  width: 25px !important;
+}
 @media screen and (min-width: 1700px) {
   .container-user {
     gap: 25px;
