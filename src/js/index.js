@@ -64,9 +64,13 @@ ciftbtn.addEventListener("click", () => {
   for (let i = 0; i < tas.length; i++) {
     currentLeft += 0;
     tas[i].style.left = currentLeft + "px";
-    if ((i + 1) % 2 === 0) {
-      currentTop += 70;
+    rightarea.appendChild(tas[i]);
+    if (tas[i] == 1) {
       currentLeft = 10;
+    } else if ((i + 1) % 2 === 0) {
+      currentTop += 60;
+      currentLeft = 10;
+      console.log(tas[i]);
     } else {
       currentLeft = 60;
     }
