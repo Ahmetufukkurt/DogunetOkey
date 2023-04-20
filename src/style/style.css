@@ -252,7 +252,7 @@ body {
 .game-information {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
 }
 .right-side {
   width: 34% !important;
@@ -311,8 +311,11 @@ body {
   background: #f3f4f9;
   border: 3px solid #000000;
   border-radius: 15px;
-  width: 60%;
-  margin: auto;
+  width: 50%;
+  margin: 0 auto;
+}
+.tas .star {
+  width: 20px !important;
 }
 .round {
   background: #10303b;
@@ -400,10 +403,7 @@ body {
   border-radius: 12px;
   position: relative;
 }
-.gameboard-star {
-  position: absolute;
-  bottom: -5px;
-}
+
 .details .tas span {
   font-size: 32px;
 }
@@ -568,25 +568,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   font-family: "Verdana";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  padding-top: 10px;
+  font-size: 12px;
   color: #219ebc;
   background: #f3f4f9;
   border: 2px solid #000000;
-  border-radius: 10px;
-  width: 40px;
-  height: 55px;
-
+  border-radius: 3px;
+  width: 20px;
+  height: 23px;
   position: absolute;
   top: 5px;
   left: 5px;
 }
+.active .star {
+  position: absolute;
+  bottom: -7px;
+}
 .active-2 {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   font-family: "Verdana";
   font-style: normal;
@@ -595,15 +599,19 @@ body {
   color: #219ebc;
   background: #f3f4f9;
   border: 2px solid #000000;
-  border-radius: 5px;
-  width: 32px;
-  height: 40px;
+  border-radius: 3px;
+  width: 20px;
+  height: 26px;
   position: absolute;
   top: 5px;
   left: 5px;
 }
+.active-2 .star {
+  position: absolute;
+  bottom: -7px;
+}
 .star {
-  width: 12px !important;
+  width: 4px !important;
 }
 .box-line {
   height: 100%;
@@ -750,18 +758,22 @@ body {
     font-family: "Verdana";
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 45px;
+    font-size: 18px;
+
     color: #219ebc;
     background: #f3f4f9;
     border: 3px solid #000000;
-    border-radius: 15px;
-    width: 55px;
-    height: 75px;
+    border-radius: 3px;
+    width: 32px;
+    height: 40px;
     margin: auto;
     position: absolute;
     top: 5px;
     left: 5px;
+  }
+  .active .star {
+    position: absolute;
+    bottom: -5px;
   }
   .isteka-area {
     width: 1150px;
@@ -776,21 +788,24 @@ body {
     font-family: "Verdana";
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    padding-top: 10px;
+    font-size: 18px;
     color: #219ebc;
     background: #f3f4f9;
     border: 2px solid #000000;
     border-radius: 5px;
-    width: 45px;
-    height: 70px;
+    width: 27px;
+    height: 40px;
     position: absolute;
     top: 5px;
     left: 5px;
   }
+  .active-2 .star {
+    position: absolute;
+    bottom: -5px;
+  }
 
   .star {
-    width: 20px !important;
+    width: 5px !important;
   }
   .col5 {
     margin-left: 50px;
@@ -842,6 +857,43 @@ body {
 @media screen and (max-width: 1366px) {
   .user-top img {
     width: 50px;
+  }
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #219ebc;
+    background: #f3f4f9;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    width: 20px;
+    height: 23px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .active-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Verdana";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #219ebc;
+    background: #f3f4f9;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
   .area {
     top: 15%;

@@ -41,8 +41,8 @@ const star = document.querySelectorAll("istek-area .tas img");
 
 seribtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
-  let currentLeft = 10;
-  let currentTop = 10;
+  let currentLeft = 5;
+  let currentTop = 5;
   const itemsPerRow = 3;
   const itemsPerReset = 6;
   let itemsCounter = 0;
@@ -51,12 +51,12 @@ seribtn.addEventListener("click", () => {
       tas[i].style.left = currentLeft + "px";
       tas[i].style.top = currentTop + "px";
 
-      currentLeft += 60; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      currentLeft += 33; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
 
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 210;
-        currentTop += 80; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+        currentLeft = 300;
+        currentTop += 40; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
       // öğelerin stil sınıflarını güncelle
@@ -71,25 +71,24 @@ seribtn.addEventListener("click", () => {
       itemsCounter++;
       if (itemsCounter === itemsPerReset) {
         itemsCounter = 0;
-        currentLeft = 10;
+        currentLeft = 5;
         let currentTop = 10;
         currentTop += tas[i].offsetHeight + 12; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
     }
   } else {
-    let currentLeft = 10;
-    let currentTop = 10;
+    let currentLeft = 3;
+    let currentTop = 5;
 
     for (let i = 0; i < tas.length; i++) {
       tas[i].style.left = currentLeft + "px";
       tas[i].style.top = currentTop + "px";
-
-      currentLeft += 43; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      currentLeft += 17; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
 
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 100;
-        currentTop += 60; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+        currentLeft = 170;
+        currentTop += 25; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
       // öğelerin stil sınıflarını güncelle
@@ -104,7 +103,7 @@ seribtn.addEventListener("click", () => {
       itemsCounter++;
       if (itemsCounter === itemsPerReset) {
         itemsCounter = 0;
-        currentLeft = 10;
+        currentLeft = 3;
         let currentTop = 10;
         currentTop += tas[i].offsetHeight + 12; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
@@ -117,19 +116,19 @@ ciftbtn.addEventListener("click", () => {
   let currentLeft = 10;
   let currentTop = 5;
   if (window.matchMedia("(min-width: 1700px)").matches) {
-    let currentLeft = 10;
-    let currentTop = 10;
+    let currentLeft = 5;
+    let currentTop = 5;
     const itemsPerRow = 2;
 
     for (let i = 0; i < tas.length; i++) {
       tas[i].style.left = currentLeft + "px";
       tas[i].style.top = currentTop + "px";
 
-      currentLeft += 55; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      currentLeft += 27; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 10;
-        currentTop += 75; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+        currentLeft = 5;
+        currentTop += 41; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
       // öğelerin stil sınıflarını güncelle
@@ -142,19 +141,19 @@ ciftbtn.addEventListener("click", () => {
       rightarea.appendChild(tas[i]);
     }
   } else {
-    let currentLeft = 7;
-    let currentTop = 5;
+    let currentLeft = 3;
+    let currentTop = 3;
     const itemsPerRow = 2;
 
     for (let i = 0; i < tas.length; i++) {
       tas[i].style.left = currentLeft + "px";
       tas[i].style.top = currentTop + "px";
 
-      currentLeft += 35; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      currentLeft += 20; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 7;
-        currentTop += 45; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
+        currentLeft = 3;
+        currentTop += 25; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
       // öğelerin stil sınıflarını güncelle
