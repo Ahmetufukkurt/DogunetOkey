@@ -1000,20 +1000,69 @@ body {
   }
   .sortable-list {
     width: 570px;
-    height: 98px;
-
-    position: relative;
-    right: 30px;
-    top: 10px;
+    height: 100px;
   }
+  .sortable-list .item {
+    width: 35px;
+    height: 50px;
+  }
+  .item .tas {
+    width: 35px;
+    height: 50px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  .item .tas span {
+    font-size: 18px;
+  }
+  .game-information {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .game-type1 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 20px;
+  }
+  .game-type2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .game-type3 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .item .tas .star {
+    width: 10px !important;
+    bottom: -5px;
+    position: absolute;
+  }
+  .game-information .tas {
+    width: 45%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .game-information .tas .star {
+    position: absolute;
+    width: 10px !important;
+    bottom: -5px;
+  }
+  .round {
+    margin: 0 auto;
+  }
+
   .isteka-area {
     width: 450px;
   }
   .settings img {
     width: 25px;
   }
-  .col4 {
-  }
+
   .settings {
     height: 43px;
   }
@@ -1029,8 +1078,7 @@ body {
   .message img {
     width: 25px;
   }
-  .tas {
-  }
+
   .user-left img {
     width: 35px;
   }
@@ -1049,9 +1097,7 @@ body {
   .round {
     font-size: 15px;
     line-height: 20px;
-    top: 68px;
-    position: relative;
-    width: 60px;
+
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -1062,12 +1108,11 @@ body {
   }
   .user .name {
     font-size: 15px;
-    position: relative;
+
     left: 5px;
     top: -7px;
   }
   .user .money {
-    position: relative;
     top: -10px;
   }
   .user-right {
@@ -1099,12 +1144,12 @@ body {
   }
   .chest span {
     font-size: 15px;
-    position: relative;
+
     left: 8px;
   }
   .coin span {
     font-size: 15px;
-    position: relative;
+
     left: 8px;
   }
   .user-top img {
@@ -1113,89 +1158,86 @@ body {
   .user-top {
     height: 55px;
   }
-  /* .user-top .money span{
-  position: relative;
-  margin-top: -20px;
-}
-.user-top .money img{
-position: relative;
-top: -10px;
-} */
+
   .user-top .money {
-    position: relative;
     right: 10px;
   }
   .user-top .yirmi {
-    position: relative;
     left: 5px;
   }
   .user-top .user .name {
-    position: relative;
     top: 1px;
     margin-right: 25px;
   }
   .user-top .coffee {
-    display: none;
+    position: absolute;
+    right: -15px;
+    bottom: -10;
   }
   .user-top img {
     width: 35px;
   }
+  .game-panel {
+    display: none;
+  }
+  .area {
+    gap: 10px;
+    left: 25%;
+    margin-top: 5px;
+    height: 180px;
+    justify-content: space-between;
+  }
+  .right-side {
+    width: 100% !important;
+  }
   .area img {
-    height: 140px;
-    position: relative;
-    top: 10px;
-    width: 420px;
+    width: 100%;
   }
-  .game-type1,
-  .game-type2,
-  .game-type3 {
-    padding: 0 3px;
-    font-size: 14px;
-    line-height: 22px;
-    position: relative;
-    top: 5px;
-    text-align: center;
-  }
-  .game-type2 {
-    margin-top: -2px;
-  }
-  .game-type3 {
-    margin-top: -2px;
-  }
-  .col2 button {
-    position: relative;
-    top: 77px;
-    font-size: 8px;
-    height: 23px;
-    left: 10px;
-  }
-  .col3 button {
-    position: relative;
-    top: 77px;
-    font-size: 8px;
-    height: 23px;
-  }
-  .col-inner {
-    right: 30px;
-    margin-top: 80px;
-    position: relative;
-  }
-  .col4 img {
-    width: 20px;
-    position: relative;
-    right: 25px;
-  }
+
   .left-giden {
-    display: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    top: 60px;
   }
+  .left-giden .star {
+    width: 15px !important;
+  }
+
   .right-giden {
-    display: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    top: 60px;
+  }
+  .right-giden .star {
+    width: 15px !important;
   }
   .gelen {
-    display: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    bottom: 100px;
+  }
+  .gelen .star {
+    width: 15px !important;
   }
   .giden {
-    display: none;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    bottom: 100px;
+  }
+  .giden .star {
+    width: 15px !important;
   }
   .box1-info,
   .box-line,
