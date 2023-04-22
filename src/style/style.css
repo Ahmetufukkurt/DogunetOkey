@@ -1178,7 +1178,64 @@ body {
     width: 35px;
   }
   .game-panel {
-    display: none;
+    bottom: 120px;
+  }
+  .container-user {
+    gap: 10px;
+    width: 400px;
+    font-size: 8px;
+  }
+
+  .col {
+    width: 30px;
+    height: 30px;
+  }
+  .col2,
+  .col3,
+  .col5 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .col2 button,
+  .col3 button {
+    font-size: 8px;
+  }
+  .col4 {
+    
+    width: 120px;
+    height: 30px;
+  }
+  .col4 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .col4-inner{
+    position: absolute;
+    margin-right: 30px;
+  }
+ 
+.col4-inner2{
+  position: absolute;
+  margin-left: 40px;
+}
+.user-puan{
+  position: absolute;
+  margin-left: 45px;
+}
+  
+  }
+  .col5 {
+    position: absolute;
+    margin-left: 310px ;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+
+  .col-inner {
+    width: 20px;
+    height: 30px;
   }
   .area {
     gap: 10px;
@@ -1239,50 +1296,19 @@ body {
   .giden .star {
     width: 15px !important;
   }
-  .box1-info,
-  .box-line,
-  .box2-info,
-  .box3-info {
-    font-size: 10px;
-    height: 20px;
-  }
-  .col-inner-2 {
-    height: 15px;
-    width: 50px;
-    text-align: center;
-    justify-content: center;
-    font-size: 12px;
-    position: relative;
-    left: 65px;
-    top: -20px;
-  }
-  .col5 {
-    margin-top: 150px;
-    font-size: 13px;
-    height: 20px;
-    width: 50px;
-    position: relative;
-    right: 86px;
-  }
-  .col4 {
-    margin-top: 25px;
-    /* height: 45px;
-  width: 170px;
-   */
-  }
-  .User-name {
-    position: relative;
-    right: 20px;
-  }
-  .user-puan {
-    position: relative;
-    right: 25px;
-  }
-  .user-puan img {
-    display: none;
-  }
-  .col4-inner2 {
-    position: relative;
-    right: 20px;
-  }
+}
+.User-name {
+  position: relative;
+  right: 20px;
+}
+.user-puan {
+  position: relative;
+  right: 25px;
+}
+.user-puan img {
+  display: none;
+}
+.col4-inner2 {
+  position: relative;
+  right: 20px;
 }
