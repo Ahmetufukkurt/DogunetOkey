@@ -42,7 +42,7 @@ const star = document.querySelectorAll("istek-area .tas img");
 seribtn.addEventListener("click", () => {
   tas.forEach((e) => e.classList.replace("tas", "opennig-tas"));
   let currentLeft = 5;
-  let currentTop = 5;
+  let currentTop = 0;
   const itemsPerRow = 3;
   const itemsPerReset = 6;
   let itemsCounter = 0;
@@ -78,7 +78,7 @@ seribtn.addEventListener("click", () => {
     }
   } else {
     let currentLeft = 3;
-    let currentTop = 5;
+    let currentTop = 3;
 
     for (let i = 0; i < tas.length; i++) {
       tas[i].style.left = currentLeft + "px";
@@ -117,7 +117,7 @@ ciftbtn.addEventListener("click", () => {
   let currentTop = 5;
   if (window.matchMedia("(min-width: 1700px)").matches) {
     let currentLeft = 5;
-    let currentTop = 5;
+    let currentTop = 3;
     const itemsPerRow = 2;
 
     for (let i = 0; i < tas.length; i++) {
@@ -141,7 +141,7 @@ ciftbtn.addEventListener("click", () => {
       rightarea.appendChild(tas[i]);
     }
   } else {
-    let currentLeft = 3;
+    let currentLeft = 1;
     let currentTop = 3;
     const itemsPerRow = 2;
 
@@ -149,10 +149,10 @@ ciftbtn.addEventListener("click", () => {
       tas[i].style.left = currentLeft + "px";
       tas[i].style.top = currentTop + "px";
 
-      currentLeft += 20; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
+      currentLeft += 17; // her öğenin genişliği ve aralık için 20 piksel sağa kaydır
       if ((i + 1) % itemsPerRow === 0) {
         // yeni bir satır başlat
-        currentLeft = 3;
+        currentLeft = 1;
         currentTop += 25; // her öğenin yüksekliği ve aralık için 20 piksel aşağı kaydır
       }
 
