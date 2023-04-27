@@ -1306,3 +1306,332 @@ body {
     right: 20px;
   }
 }
+@media screen and (max-width: 700px) {
+  .left .cift-icon {
+    width: 40px;
+  }
+  .left img {
+    width: 40px;
+  }
+  .left {
+    margin-left: -10px;
+  }
+  .right .cift-icon {
+    width: 40px;
+  }
+  .right img {
+    width: 40px;
+  }
+  .right {
+    margin-right: 30px;
+  }
+  .sortable-list {
+    width: 480px;
+    height: 80px;
+  }
+  .sortable-list .item {
+    width: 30px;
+    height: 40px;
+  }
+  .item .tas {
+    width: 30px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  .item .tas span {
+    font-size: 18px;
+  }
+  .game-information {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .game-type1 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 20px;
+  }
+  .game-type2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .game-type3 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .item .tas .star {
+    width: 10px !important;
+    bottom: -5px;
+    position: absolute;
+  }
+  .game-information .tas {
+    width: 45%;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  .game-information .tas .star {
+    position: absolute;
+    width: 10px !important;
+    bottom: -5px;
+  }
+  .round {
+    margin: 0 auto;
+  }
+
+  .isteka-area {
+    width: 480px;
+    left: 13%;
+  }
+  .settings img {
+    width: 25px;
+  }
+
+  .settings {
+    height: 43px;
+  }
+  .dropdown img {
+    width: 25px;
+  }
+  .dropdown {
+    height: 40px;
+  }
+  .message {
+    height: 40px;
+  }
+  .message img {
+    width: 25px;
+  }
+
+  .user-left img {
+    width: 35px;
+  }
+  .user .name {
+    font-size: 15px;
+  }
+  .user-left {
+    width: 80px;
+    height: 120px;
+    margin-left: 8px;
+  }
+  .user .money img {
+    width: 30px;
+    padding-left: 5px;
+  }
+  .round {
+    font-size: 15px;
+    line-height: 20px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 5px;
+  }
+  .user-right img {
+    width: 35px;
+  }
+  .user .name {
+    font-size: 15px;
+
+    left: 5px;
+    top: -7px;
+  }
+  .user .money {
+    top: -10px;
+  }
+  .user-right {
+    width: 80px;
+    height: 120px;
+  }
+  .user .money span {
+    font-size: 13px;
+  }
+  .user .money img {
+    width: 20px;
+    padding-left: 5px;
+  }
+  .coin img {
+    width: 40px;
+    height: 50px;
+  }
+  .coin {
+    width: 90px;
+    height: 40px;
+  }
+  .chest {
+    width: 90px;
+    height: 40px;
+  }
+  .chest img {
+    width: 40px;
+    height: 50px;
+  }
+  .chest span {
+    font-size: 15px;
+
+    left: 8px;
+  }
+  .coin span {
+    font-size: 15px;
+
+    left: 8px;
+  }
+  .user-top img {
+    width: 40px;
+  }
+  .user-top {
+    height: 55px;
+  }
+
+  .user-top .money {
+    right: 10px;
+  }
+  .user-top .yirmi {
+    left: 5px;
+  }
+  .user-top .user .name {
+    top: 1px;
+    margin-right: 25px;
+  }
+  .user-top .coffee {
+    position: absolute;
+    right: -15px;
+    bottom: -20px;
+  }
+  .user-top img {
+    width: 35px;
+  }
+  .game-panel {
+    bottom: 120px;
+  }
+  .container-user {
+    gap: 10px;
+    width: 400px;
+    font-size: 8px;
+  }
+
+  .col {
+    width: 30px;
+    height: 30px;
+  }
+  .col2,
+  .col3,
+  .col5 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .col2 button,
+  .col3 button {
+    font-size: 8px;
+  }
+  .col4 {
+    width: 120px;
+    height: 30px;
+  }
+  .col4 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .col4-inner {
+    position: absolute;
+    margin-right: 30px;
+  }
+
+  .col4-inner2 {
+    position: absolute;
+    margin-left: 40px;
+  }
+  .user-puan {
+    position: absolute;
+    margin-left: 45px;
+  }
+
+  .col5 {
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+
+  .col-inner {
+    width: 20px;
+    height: 30px;
+  }
+  .area {
+    gap: 10px;
+    left: 25%;
+    margin-top: 5px;
+    height: 180px;
+  }
+  .right-side {
+    width: 28%;
+  }
+
+  .left-giden {
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    top: 60px;
+  }
+  .left-giden .star {
+    width: 15px !important;
+  }
+
+  .right-giden {
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    top: 60px;
+  }
+  .right-giden .star {
+    width: 15px !important;
+  }
+  .gelen {
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    bottom: 100px;
+  }
+  .gelen .star {
+    width: 15px !important;
+  }
+  .giden {
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-top: 0;
+    bottom: 100px;
+  }
+  .giden .star {
+    width: 15px !important;
+  }
+
+  .User-name {
+    position: relative;
+    right: 20px;
+  }
+  .user-puan {
+    position: relative;
+    right: 25px;
+  }
+  .user-puan img {
+    display: none;
+  }
+  .col4-inner2 {
+    position: relative;
+    right: 20px;
+  }
+}
