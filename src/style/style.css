@@ -255,9 +255,8 @@ body {
   justify-content: space-between;
 }
 .right-side {
-  width: 34% !important;
-  height: 100%;
   position: relative;
+  width: 25%;
 }
 .star {
   width: 15px;
@@ -1202,7 +1201,6 @@ body {
     font-size: 8px;
   }
   .col4 {
-    
     width: 120px;
     height: 30px;
   }
@@ -1211,24 +1209,23 @@ body {
     height: 20px;
     margin-right: 10px;
   }
-  .col4-inner{
+  .col4-inner {
     position: absolute;
     margin-right: 30px;
   }
- 
-.col4-inner2{
-  position: absolute;
-  margin-left: 40px;
-}
-.user-puan{
-  position: absolute;
-  margin-left: 45px;
-}
-  
+
+  .col4-inner2 {
+    position: absolute;
+    margin-left: 40px;
   }
+  .user-puan {
+    position: absolute;
+    margin-left: 45px;
+  }
+
   .col5 {
     position: absolute;
-    margin-left: 310px ;
+    margin-left: 310px;
     margin-top: 5px;
     font-size: 8px;
   }
@@ -1242,13 +1239,9 @@ body {
     left: 25%;
     margin-top: 5px;
     height: 180px;
-    justify-content: space-between;
   }
   .right-side {
-    width: 100% !important;
-  }
-  .area img {
-    width: 100%;
+    width: 25%;
   }
 
   .left-giden {
@@ -1296,19 +1289,20 @@ body {
   .giden .star {
     width: 15px !important;
   }
-}
-.User-name {
-  position: relative;
-  right: 20px;
-}
-.user-puan {
-  position: relative;
-  right: 25px;
-}
-.user-puan img {
-  display: none;
-}
-.col4-inner2 {
-  position: relative;
-  right: 20px;
+
+  .User-name {
+    position: relative;
+    right: 20px;
+  }
+  .user-puan {
+    position: relative;
+    right: 25px;
+  }
+  .user-puan img {
+    display: none;
+  }
+  .col4-inner2 {
+    position: relative;
+    right: 20px;
+  }
 }
